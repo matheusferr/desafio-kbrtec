@@ -1,0 +1,12 @@
+.container {
+    @apply flex flex-col p-4 sm:p-8 items-center justify-center rounded-3xl my-8;
+    @apply sm:flex-row sm:px-6;
+}
+
+.variantContained{
+  @apply bg-danger;
+}
+
+.variantOutline{
+  @apply p-4 border-2 border-danger;
+}

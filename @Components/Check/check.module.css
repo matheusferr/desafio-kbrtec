@@ -1,0 +1,21 @@
+.container, .iconContainer{
+    @apply p-1;
+}
+
+.container{
+    @apply rounded-full max-w-max-content bg-gradient-to-br from-accent-primary to-accent-secondary;    
+    background-size: 400%;    
+}
+
+.iconContainer{
+    @apply relative z-20 flex justify-center items-center;
+}
+
+.iconContainer::before{
+    @apply absolute w-full h-full border-2 border-accent-secondary rounded-full bg-accent-primary;
+    content:'';
+}
+
+.icon{
+    @apply relative text-accent-secondary;
+}

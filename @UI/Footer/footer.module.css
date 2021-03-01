@@ -1,0 +1,28 @@
+.container{
+    @apply flex flex-col items-center justify-center sm:px-96 p-10 sm:pt-0  bg-gradient-to-b from-surface to-black sm:flex-row;
+    background-size: 200%
+}
+
+.content{
+    @apply text-white flex flex-1 flex-col sm:flex-row items-center justify-between;
+}
+
+.copyright{
+    @apply flex flex-col p-8 text-center sm:text-left sm:p-0;
+}
+
+.copyright strong{
+    @apply font-medium mb-2
+}
+
+.copyright p {
+    @apply text-gray-500;
+}
+
+.signature{
+    @apply flex items-center;
+}
+
+.signature p{
+    @apply font-poppins mr-4;
+}

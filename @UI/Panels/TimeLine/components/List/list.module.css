@@ -1,0 +1,9 @@
+.timeline {
+  @apply flex flex-1 flex-col relative;
+}
+
+.timeline::after {
+  @apply absolute w-2 top-0 bottom-0;
+  content: '';
+  margin-left: -3px;
+}

@@ -1,0 +1,39 @@
+.bannerContainer {
+  @apply relative flex flex-1 flex-col items-center px-8 py-10 bg-black;
+  @apply sm:flex-row sm:justify-around sm:px-20 sm:py-20;
+  background-image: url('/panel.png');
+  background-size: cover;
+}
+
+.leftContainer {
+    @apply flex flex-1 flex-col items-center;
+    @apply sm:flex-row;
+}
+
+.iconContainer {
+    @apply mx-10 mb-10;
+    @apply sm:mb-0;
+}
+
+.iconText {
+    @apply text-3xl text-center text-white font-bold uppercase tracking-wider mb-20;
+    @apply sm:text-left sm:mb-0;
+}
+
+.rightContainer {
+    @apply flex flex-1 mb-20;
+    @apply sm:mr-40;
+}
+
+.rightContent {
+    @apply text-sm text-white font-bold tracking-wider leading-8;
+}
+
+.rightContent span { 
+    @apply text-accent-primary;
+}
+
+.rightDetail { 
+    @apply w-20 h-20 rounded-xl transform rotate-45 absolute -top-10 right-10 bg-accent-primary;
+}
+

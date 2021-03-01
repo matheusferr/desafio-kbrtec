@@ -1,0 +1,28 @@
+.container{
+    @apply flex flex-col w-full p-5;
+    @apply sm:w-160;
+}
+
+.title{
+    @apply text-3xl font-light;
+}
+
+.title strong{
+    @apply font-bold;
+}
+
+.subHead {
+    @apply text-2xl font-bold; 
+}
+
+.textBody{
+    @apply text-base;
+}
+
+.title, .subHead {
+    @apply tracking-widest uppercase;
+}
+
+.title, .subHead, .textBody {
+    @apply mb-8;
+}

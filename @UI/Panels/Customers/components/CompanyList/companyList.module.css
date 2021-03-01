@@ -1,0 +1,10 @@
+.container{
+    @apply flex flex-1 flex-col items-center justify-center;
+    @apply sm:flex-row
+}
+
+.content {
+    @apply grid grid-cols-1 gap-4 mx-4 even:my-4;
+    @apply sm:grid-rows-3 sm:gap-4 sm:even:mt-36 sm:mb-0;
+}
+

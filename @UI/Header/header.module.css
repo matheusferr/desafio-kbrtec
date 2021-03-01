@@ -1,0 +1,48 @@
+.headerContainer {
+    @apply flex flex-1 items-center justify-between h-48 mb-8;
+}
+
+
+.logoContainer{    
+    @apply flex flex-1 mt-4 ml-8;
+    @apply sm:ml-26 sm:mt-10 sm:pb-4 sm:px-8;
+}
+
+
+.logoContainer::before{
+    @apply rounded-md absolute transform rotate-45 w-96 h-96 -top-56 -left-28 bg-gradient-to-t
+  from-blue-500 to-blue-300;
+    @apply sm:-top-48 sm:-left-4;
+    content:"";
+    z-index: -1;
+}
+
+.buttonContainer {
+    @apply flex items-center justify-center w-2/12 mr-8;
+}
+
+.textButton{
+    @apply hidden;
+    @apply sm:flex;
+}
+
+.menuButton {
+    @apply flex flex-col justify-between w-12 h-10 ml-4;
+    @apply sm:w-10 sm:h-8;
+}
+
+.menuButtonRowBase{
+    @apply h-2 rounded-full;
+}
+
+.menuButtonRow1{
+    @apply menuButtonRowBase w-1/2 bg-blue-700;
+}
+
+.menuButtonRow2{
+    @apply menuButtonRowBase bg-black;
+}
+
+.menuButtonRow3{
+    @apply menuButtonRowBase w-1/2 self-end bg-blue-700;
+}

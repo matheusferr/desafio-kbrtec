@@ -1,0 +1,110 @@
+.container{
+    @apply flex flex-col;
+    @apply sm:flex-row;
+}
+
+.titleContainer{
+    @apply flex flex-col text-center;
+    @apply sm:text-left;
+}
+
+.title {
+    @apply text-xl font-bold leading-10 uppercase flex flex-col tracking-widest mb-8;
+    @apply sm:text-3xl;
+}
+
+.titleCaption{
+    @apply text-lg text-accent-primary mb-8;
+    @apply sm:text-2xl;
+}
+
+.title, .titleCaption {
+    @apply font-bold tracking-widest uppercase;
+}
+
+.text{
+    @apply text-lg even:my-8;
+}
+
+.content{
+    @apply sm:px-20;
+}
+
+.leftContainer{
+    @apply relative text-white flex flex-1 justify-end p-8 pt-0 bg-surface;
+    @apply sm:p-20 sm:pt-0;
+}
+
+
+.leftContent{
+    @apply flex flex-1 flex-col py-20;
+}
+
+.leftContent .titleContainer .titleCaption{
+    @apply mb-24;
+}
+
+.leftContent .titleContainer .title{
+    @apply mb-12;
+}
+
+.leftContent .content:nth-child(4){
+    @apply my-16 p-20 sm:pl-64 bg-gradient-to-l from-surface;
+}
+
+.leftContent .content{
+    @apply sm:pl-96;
+}
+
+.leftContentControlContainer{
+    @apply hidden absolute top-1/2 mt-20 right-0;
+    @apply sm:flex sm:flex-col;
+}
+
+.leftContentControlContainer div{
+    @apply flex items-center justify-center w-16 h-16;
+}
+
+.leftContentControlContainer div:first-child{
+    @apply bg-blue-500;
+}
+
+.leftContentControlContainer:last-child{
+    @apply bg-accent-primary;
+}
+
+.rightContainer{    
+    @apply flex flex-1 flex-col relative p-8 bg-gradient-to-bl  from-blue-700;
+    @apply sm:flex-row sm:p-20 sm:pt-0;
+    overflow-x: clip;
+    background-size: 400%;    
+    background-position: 400%
+}
+
+.rightContainer::after{
+    @apply absolute z-20 w-32 h-32 right-0 -top-16 rounded-3xl bg-accent-primary transform
+    rotate-45 ;
+    content:'';
+}
+
+.rightContent{
+    @apply text-black flex flex-col sm:ml-12  py-20;
+}
+
+.rightContent .titleContainer .titleCaption{
+    @apply text-black;
+}
+
+.rightContent .content{
+    @apply sm:pr-64;
+}
+
+
+.rightContent .content:nth-child(4){
+    @apply my-32
+}
+
+.button{
+    @apply text-black font-source font-bold  uppercase tracking-widest flex justify-center w-1/2 
+    bg-accent-primary p-4 rounded-full;
+  }

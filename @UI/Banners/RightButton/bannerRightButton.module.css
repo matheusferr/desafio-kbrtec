@@ -1,0 +1,34 @@
+.bannerContainer {
+  @apply flex flex-1 flex-col justify-center px-8 py-10 bg-black;
+  @apply sm:flex-row sm:items-center sm:justify-around sm:px-0 sm:p-20;
+  background-image: url('/panel_reverse.png');
+  background-size: cover;
+}
+
+.leftContainer {
+  @apply flex mb-16;
+  @apply sm:w-5/12 sm:ml-36;
+}
+
+.leftContent {
+  @apply text-white leading-8;
+}
+
+.title {
+  @apply text-3xl text-center font-bold uppercase tracking-wider leading-10;
+   @apply sm:text-left sm:mr-8;
+}
+
+.title strong {
+  @apply text-accent-primary
+}
+
+.title + p {
+  @apply mt-8 text-center;
+  @apply sm:text-left sm:w-3/5;
+}
+
+.rightContainer {
+  @apply flex flex-1;
+  @apply sm:pr-40;
+}

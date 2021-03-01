@@ -1,0 +1,94 @@
+.container{
+    @apply text-white flex flex-1 flex-col pt-10;
+    @apply sm:flex-row sm:pt-20;
+}
+
+.titleContainer{
+    @apply flex flex-col px-8 pt-8;
+    @apply sm:pt-20 ;
+}
+
+.title {
+    @apply text-3xl text-center font-bold tracking-widest leading-10 uppercase flex flex-col mb-8;
+    @apply sm:text-left;
+}
+
+.titleCaption{
+    @apply text-2xl text-center text-accent-primary mb-8;
+    @apply sm:text-left;
+}
+
+.title, .titleCaption {
+    @apply font-bold tracking-widest uppercase;
+}
+
+.text{
+    @apply text-lg even:my-8;
+}
+
+.content{
+    @apply w-full first:pt-20 last:pb-20;
+}
+
+.leftContainer{
+    @apply flex flex-1 justify-center bg-black;
+    @apply sm:justify-end;
+}
+
+.leftContent{
+    @apply flex flex-1 flex-col;
+}
+
+.leftContent .titleContainer{
+    @apply sm:pl-64 sm:pr-0
+}
+
+.listText{
+    @apply text-lg text-accent-primary ml-14 mb-8;
+}
+
+.leftContent .content{
+    @apply px-12;
+    @apply sm:px-8 sm:p-20 sm:pl-64;
+ }
+
+.leftContent .titleContainer .title{
+    @apply mb-12;
+}
+
+.leftContent .content:nth-child(3){
+    @apply bg-gradient-to-l from-surface;
+}
+
+.rightContainer{
+    @apply flex flex-1 flex-col relative bg-gradient-to-r from-blue-600 to-blue-300;
+    overflow-x: clip;
+    background-size: 200%;
+    background-position: -100%;
+}
+
+.rightContainer::after{
+    @apply absolute z-20 w-28 h-28 right-0 -top-14 rounded-2xl bg-accent-primary transform
+    rotate-45 ;
+    @apply sm:-top-16 sm:w-32 sm:h-32;
+    content:'';
+}
+
+.rightContent{
+    @apply flex flex-col p-10;
+    @apply sm:p-20;
+}
+
+.rightContent .content:nth-child(3){
+    @apply mt-16;
+}
+
+.rightContent .content:nth-child(4){
+    @apply my-12;
+    @apply sm:my-32;
+}
+
+.rightContent .content:nth-child(5){
+    @apply text-black;
+    @apply sm:w-1/2;
+}

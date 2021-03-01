@@ -1,0 +1,9 @@
+.container{
+    @apply flex items-center mr-6;
+    @apply sm:items-start sm:ml-8;
+}
+
+.dot{
+    @apply w-2 h-2 rounded-full bg-accent-primary;
+    @apply even:opacity-50 even:mx-2 last:opacity-20
+}

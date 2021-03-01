@@ -1,0 +1,53 @@
+.bannerContainer {
+  @apply relative flex-col items-center p-20 px-8; 
+  @apply sm:px-0;
+}
+
+.iconContainer {
+    @apply items-center justify-center -top-8;
+    @apply sm:-top-8 sm:mb-16;
+}
+
+.iconContainer::before {
+  @apply w-44 h-44 transform rotate-45 rounded-3xl bg-accent-primary shadow-lg;
+  content: '';
+}
+
+.iconContainer, .iconContainer::before {
+  @apply absolute;
+}
+
+.title {
+    @apply text-3xl font-bold uppercase tracking-wider mt-36;
+    @apply sm:mt-48;
+}
+
+.titleCaption {
+    @apply text-2xl text-center font-bold uppercase tracking-extrawide my-8;
+    @apply sm:text-left;
+}
+
+.quote {
+    @apply text-lg justify-center;
+    @apply sm:items-center;
+}
+
+.bannerContainer, .iconContainer, .quote{
+    @apply flex;
+}
+
+.quote::before, .quote::after{
+    @apply text-8xl font-unkempt text-blue-700 h-10;
+    content: '“';
+}
+
+.quote::before {
+    @apply mr-6;
+    @apply sm:mr-14;
+}
+
+.quote::after {
+    @apply ml-6 self-end;
+    @apply sm:ml-14 sm:self-auto;
+    transform: scale(-1,1);
+}

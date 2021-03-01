@@ -1,0 +1,32 @@
+.container{
+    @apply flex flex-col items-center justify-between w-48 py-5;
+}
+
+.titleContainer{
+    @apply text-center flex flex-col flex-1;
+}
+
+.title{
+    @apply font-medium mt-4;
+}
+
+.duration{
+    @apply text-blue-700;
+}
+
+.title, .duration{
+    @apply font-medium;
+}
+
+.price{
+    @apply text-2xl font-oswald font-bold mt-8;
+}
+
+.numberContainer strong{
+    @apply text-xl z-20 flex items-center justify-center;
+}
+
+.numberContainer::before{
+    @apply absolute w-10 h-10 rounded-xl bg-accent-primary transform rotate-45;
+    content: '';
+}

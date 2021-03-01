@@ -1,0 +1,7 @@
+.container{
+    @apply relative flex items-center justify-start max-w-max-content even:my-4;
+}
+
+.icon{
+    @apply absolute text-accent-primary left-1/2 -ml-8 p-2 bg-black rounded-full;
+}

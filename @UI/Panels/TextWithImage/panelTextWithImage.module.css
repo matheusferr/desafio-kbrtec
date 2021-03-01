@@ -1,0 +1,43 @@
+.container{
+    @apply flex flex-1 flex-col pb-20;
+    @apply sm:flex-row;
+}
+
+.title {
+    @apply text-xl font-bold leading-10 uppercase flex flex-col tracking-widest mb-8;
+    @apply sm:text-3xl;
+}
+
+.textBody {
+    @apply text-lg flex flex-1 mb-12;
+    @apply sm:pr-10;
+}
+
+.textButton{
+    @apply sm:mr-8;
+}
+
+
+.leftContainer{
+    @apply flex flex-1 justify-end p-8;
+    @apply sm:p-20 sm:pt-0;
+}
+
+.leftContent{
+    @apply flex flex-col;
+    @apply sm:w-3/4;
+}
+
+
+.leftText:last-child{
+    @apply mb-0;
+}
+
+.rightContainer{
+    @apply flex flex-1;
+}
+
+.rightContent{
+    @apply flex flex-1 justify-start;
+    @apply sm:justify-center;
+}

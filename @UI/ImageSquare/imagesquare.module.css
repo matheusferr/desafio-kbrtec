@@ -1,0 +1,10 @@
+.container {
+  @apply relative w-80 mt-14;
+  @apply sm:w-160;
+}
+
+.image {
+  @apply w-80 z-10;
+  @apply sm:absolute sm:w-160 sm:h-160 sm:left-10;
+}
+

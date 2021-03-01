@@ -1,0 +1,16 @@
+.container{
+    @apply relative flex flex-col items-center justify-center w-48 py-5 text-center;
+}
+
+.numberContainer{
+    @apply relative flex items-center justify-center mb-6;
+}
+
+.numberContainer strong{
+    @apply text-xl z-20 flex items-center justify-center;
+}
+
+.numberContainer::before{
+    @apply absolute w-10 h-10 rounded-xl bg-accent-primary transform rotate-45;
+    content: '';
+}

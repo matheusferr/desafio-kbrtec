@@ -1,0 +1,28 @@
+.container{
+    @apply flex flex-col items-center justify-center;
+}
+.imageContainer{
+    @apply relative flex items-center justify-center z-40;
+}
+
+.imageContainer::before{
+    @apply absolute w-28 h-28 rounded-xl bg-gradient-to-br from-gray-500 transform rotate-45;
+    content: '';
+}
+
+.imageContainer::after{
+    @apply absolute w-27.5 h-27.5 rounded-xl bg-white transform rotate-45;
+    content: '';
+}
+
+.image {
+    @apply absolute z-20;
+}
+
+.container strong {
+    @apply text-center font-medium w-24 mb-1;
+}
+
+.container p {
+    @apply text-gray-600;
+}

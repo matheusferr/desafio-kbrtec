@@ -1,0 +1,13 @@
+.container{
+    @apply flex flex-col items-center p-8;
+    @apply sm:justify-center sm:py-10;
+}
+.title{
+    @apply text-lg text-center font-fira mb-20;
+    @apply sm:text-left;
+}
+
+.plansContainer {
+    @apply grid grid-cols-1 gap-8;
+    @apply sm:grid-cols-5 sm:gap-24;
+}

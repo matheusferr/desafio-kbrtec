@@ -1,0 +1,9 @@
+.container{
+    @apply flex w-full flex-col;
+    @apply sm:w-120;
+}
+
+.iconContainer{
+    @apply flex mt-16 mx-auto;
+    @apply sm:ml-20;
+}

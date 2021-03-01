@@ -1,0 +1,13 @@
+.container{
+    @apply flex flex-col p-8;
+    @apply sm:justify-center sm:py-10;
+}
+
+.title{
+    @apply text-2xl text-center font-bold uppercase tracking-widest mb-16;
+}
+
+.itemContainer {
+    @apply grid grid-cols-2 gap-8;
+    @apply sm:grid-cols-5;
+}

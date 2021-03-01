@@ -1,0 +1,30 @@
+.bannerContainer {
+  @apply flex flex-1 flex-col items-center justify-center px-8 py-20 pb-5;
+  @apply sm:flex-row sm:justify-around sm:p-20;
+}
+
+.leftContainer {
+  @apply flex flex-1 mb-16;
+  @apply sm:w-5/12;
+}
+
+.leftContent {
+  @apply leading-8;
+  @apply sm:mx-10;
+}
+
+.leftContent p:first-child {
+  @apply mb-8;
+}
+
+.rightContainer {
+  @apply flex flex-col py-2;
+  @apply sm:flex-row;
+}
+
+.iconText {
+  @apply text-3xl text-center font-bold uppercase tracking-wider mb-16;
+  @apply sm:text-right sm:mr-8;
+}
+
+

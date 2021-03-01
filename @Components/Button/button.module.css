@@ -1,0 +1,12 @@
+.container{
+    @apply font-source font-bold tracking-wider uppercase flex flex-1 items-center justify-center 
+    py-5 rounded-full bg-red-500;
+}
+
+.solid{
+    @apply bg-accent-primary;
+}
+
+.gradient{
+    @apply  text-accent-primary bg-gradient-to-t from-blue-500 to-blue-300 sm:flex sm:mr-8;
+}

@@ -1,0 +1,38 @@
+.bannerContainer {
+    @apply flex flex-col items-center justify-center px-8 py-10;
+    @apply sm:flex-row sm:justify-around sm:p-20;
+  }
+
+.leftContainer {
+    @apply flex flex-1 flex-col justify-end items-center mb-16;
+    @apply sm:flex-row sm:mb-0;
+}
+
+.iconContainer {
+    @apply flex items-center justify-center mx-auto mb-16;
+    @apply sm:flex-row sm:mr-28;
+}
+
+.iconContainer::before {
+  @apply absolute w-40 h-40 transform rotate-45 rounded-xl bg-accent-primary;
+  @apply sm:w-44 sm:h-44;
+  content: '';
+}
+
+.iconText {
+    @apply text-3xl text-center font-bold uppercase tracking-wider;
+    @apply sm:text-right sm:mb-8;
+}
+
+.rightContainer {
+    @apply flex flex-1 flex-col py-2;
+    @apply sm:px-60;
+}
+
+.rightContent {
+    @apply text-lg tracking-wider leading-8;
+}
+
+.rightContent span { 
+    @apply text-accent-primary;
+}

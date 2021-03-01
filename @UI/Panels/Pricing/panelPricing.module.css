@@ -1,0 +1,131 @@
+.container, .titleContainer, .leftContainer,.rightContainer, .leftContent, .rightContent{
+    @apply flex;
+}
+
+.container, .titleContainer, .leftContent, .rightContent{
+    @apply flex-col;
+}
+
+.container{
+    @apply sm:flex-row;
+}
+
+.title {
+    @apply text-xl text-center font-bold leading-10 mb-8;
+    @apply sm:text-3xl sm:text-left;
+}
+
+.title:last-child {
+    @apply font-fira font-medium text-2xl;
+}
+
+.text, .optionTitle{
+    @apply text-lg;
+}
+
+.text{
+    @apply even:my-8;
+}
+
+.content{
+    @apply sm:first:pt-20;
+}
+
+.optionTitle {
+    @apply sm:text-xl font-sans tracking-wide;
+}
+
+.optionPrice {
+    @apply text-4xl sm:text-5xl font-oswald font-bold uppercase tracking-widest;
+}
+
+.leftContainer{
+    @apply justify-end;
+    @apply sm:pr-4;
+}
+
+.rightContainer{    
+    @apply justify-start;
+}
+
+.leftContainer,.rightContainer{
+    @apply flex-1;
+    @apply:sm:px-20;
+}
+
+.leftContent, .rightContent{
+    @apply px-8;
+    @apply sm:px-0;
+}
+
+.leftContent{
+    @apply items-center;
+    @apply sm:w-3/4;
+}
+
+.leftContent .optionTitle {
+    @apply text-xl uppercase;
+}
+
+.leftContent .optionTitle, .leftContent .optionPrice {
+    @apply text-white font-bold;
+}
+
+.leftContent .content{
+    @apply sm:ml-16;
+}
+
+.leftContent .content:first-child, .rightContent .content:first-child{
+    @apply sm:pl-0;
+}
+
+.leftContent .content:first-child{
+    @apply sm:ml-0;
+}
+
+.leftContent .content .text{
+    @apply sm:pr-16;
+}
+
+.leftContent .content:nth-child(2) .title{
+    @apply font-montserrat tracking-widest uppercase;
+    @apply sm:mb-16;
+}
+
+.leftContent .content:last-child .title{
+    @apply font-fira font-medium mt-8 sm:pr-20;
+}
+
+
+.rightContent .titleContainer .titleCaption{
+    @apply mb-0;
+}
+
+.rightContent .content{
+    @apply sm:w-3/4
+}
+
+.rightContent .content:first-child{
+    @apply mb-8 sm:mb-16;
+}
+
+.rightContent .content:last-child{
+    @apply sm:ml-32 sm:pr-8;
+}
+
+.rightContent .optionTitle {
+    @apply text-center px-4;
+    @apply sm:text-left sm:px-0;
+}
+
+.rightContent .optionPrice {
+    @apply text-danger my-4 sm:my-0 sm:mx-2;
+}
+
+.rightContent .content:nth-child(2) .title{
+    @apply font-fira mb-0 sm:ml-28 tracking-widest;
+}
+
+.rightContent .content:nth-child(3){
+    @apply sm:ml-10;
+}

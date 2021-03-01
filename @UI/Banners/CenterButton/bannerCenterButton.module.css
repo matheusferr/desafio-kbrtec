@@ -1,0 +1,4 @@
+.bannerContainer {
+  @apply flex flex-col p-10;
+  @apply sm:items-center;
+}

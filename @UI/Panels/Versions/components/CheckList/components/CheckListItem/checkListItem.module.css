@@ -1,0 +1,7 @@
+.container{
+    @apply flex flex-1 items-center mt-8;
+}
+
+.container p {
+    @apply text-xl ml-8;
+}

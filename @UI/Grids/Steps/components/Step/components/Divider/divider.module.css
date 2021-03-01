@@ -1,0 +1,23 @@
+.container{
+    @apply hidden absolute sm:flex left-full top-1/4;
+}
+
+.dot{
+    @apply w-1 h-1 rounded-full bg-black even:mx-2;
+}
+
+.dot:nth-child(2n-3){
+    @apply bg-opacity-40;
+}
+
+.dot:nth-child(3n-2){
+    @apply bg-opacity-20;
+}
+
+.dot:nth-child(2n-2){
+    @apply bg-opacity-30;
+}
+
+.dot:nth-child(4){
+    @apply bg-opacity-50;
+}

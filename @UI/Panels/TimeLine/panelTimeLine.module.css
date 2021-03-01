@@ -1,0 +1,50 @@
+.container{
+    @apply text-white flex flex-1 flex-col py-20;
+    @apply sm:flex-row;
+}
+
+.titleContainer{
+    @apply w-5/6;
+}
+
+.title {
+    @apply text-2xl text-center font-bold leading-10 uppercase flex flex-col tracking-widest mb-8;
+    @apply sm:text-3xl sm:text-left;
+}
+
+.leftContainer{
+    @apply flex justify-end flex-1 p-8 bg-gradient-to-r from-blue-600 to-blue-300;
+    @apply sm:p-20;
+    background-size: 200%;
+    background-position: -100%;
+}
+
+.leftContent{
+    @apply flex flex-col;
+    @apply sm:w-3/4;
+}
+
+
+.leftText{
+    @apply text-lg mb-8;
+    @apply sm:w-5/6;
+}
+
+.leftText:last-child{
+    @apply mb-0;
+}
+
+.rightContainer{
+    @apply relative flex flex-1 p-8 bg-black;
+    @apply sm:p-20;
+}
+
+.rightContainer::after {
+    @apply absolute w-px left-8 top-0 bottom-0 bg-gradient-to-b from-black to-accent-primary;
+    @apply sm:left-20;
+    content: '';
+  }
+
+.rightContent{
+    @apply text-white flex flex-col ml-12;
+}

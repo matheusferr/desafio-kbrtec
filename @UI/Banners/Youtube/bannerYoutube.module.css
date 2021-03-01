@@ -1,0 +1,7 @@
+.bannerContainer {
+  @apply relative flex flex-col items-center p-8 sm:p-20 bg-surface text-white; 
+}
+
+.title {
+    @apply text-3xl text-center font-bold uppercase leading-10 tracking-extrawide sm:w-3/5 mb-16;
+}

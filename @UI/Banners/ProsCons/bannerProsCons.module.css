@@ -1,0 +1,64 @@
+.bannerContainer {
+    @apply text-white relative flex flex-col items-center p-20 px-8 bg-black;
+    @apply sm:px-0;
+}
+
+.iconContainer {
+    @apply absolute flex items-center justify-center -top-8;
+    @apply sm:-top-8 sm:mb-16;
+}
+
+.iconContainer::before {
+  @apply w-44 h-44 transform rotate-45 bg-accent-primary absolute rounded-3xl shadow-lg;
+  content: '';
+}
+
+.titleContainer{
+    @apply flex flex-col items-center;
+}
+
+.title {
+    @apply text-3xl text-center sm:text-left font-oswald font-bold uppercase tracking-widest mt-36 sm:mt-48 mb-8;
+}
+
+.titleCaption {
+    @apply text-xl text-center items-center justify-center mb-16 sm:mb-28;
+    width: 65%;
+}
+
+.question{
+    @apply text-2xl text-center sm:text-left text-accent-primary font-oswald font-bold tracking-widest uppercase mb-8 sm:mb-16;
+}
+
+.cardContainer{
+    @apply flex flex-1 flex-col items-center;
+    @apply sm:flex-row;
+}
+
+.cardContainer:last-child{
+    @apply mt-8 sm:items-start sm:pl-8 sm:justify-start sm:mt-0; 
+}
+
+.card{
+    @apply flex flex-1 flex-col sm:items-end items-center sm:justify-end sm:pr-8;
+}
+
+.card:last-child{
+    @apply sm:items-start mt-8 sm:mt-0 sm:pl-8 sm:pr-0  sm:justify-start
+}
+
+.okIcon{
+    @apply relative mb-8  sm:right-1/4 sm:mr-8 text-accent-primary;
+}
+
+.badIcon{
+    @apply relative mb-8 sm:left-1/4 sm:ml-8 text-danger;
+}
+
+.cardText{
+    @apply text-black text-center text-xl sm:w-4/6 bg-accent-primary p-8 sm:p-16 rounded-2xl;
+}
+
+.card:last-child > .cardText{
+    @apply text-white bg-danger;
+}
